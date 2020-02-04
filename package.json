@@ -8,6 +8,11 @@
         "build": "webpack --config webpack.config.prod.js",
         "demo": "webpack-dev-server --open --config webpack.config.dev.js"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/leksar/react-d3-templates"
+    },
+    "author": "Alexander Kondarov",
     "peerDependencies": {
         "react": "^16.0.0",
         "react-dom": "^16.0.0"
