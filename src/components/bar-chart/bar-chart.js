@@ -12,7 +12,7 @@ const BarChart = ({ data }) => {
             .append('svg')
             .attr('width', CANVAS_WIDTH)
             .attr('height', CANVAS_HEIGHT)
-            .style('border', '1px solid white')
+            .style('border', '1px solid #ccc')
         // eslint-disable-next-line
     }, [])
 
