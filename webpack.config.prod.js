@@ -8,6 +8,7 @@ module.exports = {
       path: path.resolve(__dirname, 'lib'),
       filename: '[name].js',
       publicPath: '/',
+      libraryTarget: 'commonjs2'
    },
    devServer: {
       historyApiFallback: true
