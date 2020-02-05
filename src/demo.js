@@ -1,5 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import BarChart from './components/bar-chart/';
+import LineChart from './components/line-chart';
+import './styles.css';
 
-ReactDOM.render(<BarChart data={[1,2,3]} />, document.getElementById('root'));
+const App = () => {
+    return (
+        <>
+            <BarChart data={[18, 21, 16, 22]} />
+            <LineChart data={[18, 21, 16, 22]} />
+        </>
+    )
+}
+
+ReactDOM.render(<App />, document.getElementById('root'));
