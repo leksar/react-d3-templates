@@ -1,12 +1,12 @@
-svg {
+svg.react-d3-templates-canvas {
     background-color: #eaeaea;
     border:1px solid #ccc;
 }
 
-rect {
+svg.react-d3-templates-canvas rect {
     fill: orange;
 }
-path {
+svg.react-d3-templates-canvas path {
     fill: none;
     stroke: orange;
     stroke-width: 3;
