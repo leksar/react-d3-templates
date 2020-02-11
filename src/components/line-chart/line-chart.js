@@ -6,15 +6,15 @@ const LineChart = ({ data = [], width = 400, height = 300 }) => {
     let canvas = React.createRef();
 
     useEffect(() => {
+        const barWidth = width / data.length;
         const y = d3.scaleLinear()
             .domain([0, d3.max(data)])
             .range([0, height]);
 
         const svgCanvas = d3.select(canvas.current);
-
-        svgCanvas.append("path")
-            .datum(data)
-            .attr("d", d3.line().x((_, idx) => idx * 25).y(d => height - y(d)));
+        svgCanvas.selectAll('path').remove();
+        const path = svgCanvas.append("path").datum(data)
+        path.attr("d", d3.line().x((_, idx) => idx * barWidth).y(d => height - y(d)));
     }, [data])
 
     return (
