@@ -14,5 +14,9 @@ svg.react-d3-templates-canvas path {
 svg.react-d3-templates-canvas .axis path {
     fill: none;
     stroke: #ccc;
-    stroke-width: 2;
+    stroke-width: 1;
+}
+svg.react-d3-templates-canvas .y.grid path, svg.react-d3-templates-canvas .y.grid line{
+    stroke: #ccc;
+    stroke-width: 1;
 }

@@ -32,6 +32,11 @@ module.exports = {
    },
    externals: [
       'd3',
+      'd3-selection',
+      'd3-shape',
+      'd3-scale',
+      'd3-array',
+      'd3-axis',
       'react',
       'react-dom'
    ]
