@@ -11,7 +11,7 @@ const Axis = ({ margin, y, width }) => {
         select(yGrid.current)
             .attr('class','y grid')
             .style('transform', 'translate(' + margin.left + 'px,' + margin.top + 'px)')
-            .call(axisLeft(y).tickSize(-width).ticks(5).tickFormat(''))
+            .call(axisLeft(y).tickSize(-width + margin.right + margin.left).ticks(5).tickFormat(''))
 
         select(yScale.current)
             .attr("class", "y axis")
