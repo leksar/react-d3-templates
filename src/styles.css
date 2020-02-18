@@ -11,3 +11,8 @@ svg.react-d3-templates-canvas path {
     stroke: orange;
     stroke-width: 3;
 }
+svg.react-d3-templates-canvas .axis path {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2;
+}
